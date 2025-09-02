@@ -27,12 +27,18 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcairo2-dev pkg-config python3-dev
+          sudo apt-get install -y \
+            libcairo2-dev \
+            libpango1.0-dev \
+            libgdk-pixbuf2.0-dev \
+            libffi-dev \
+            pkg-config \
+            python3-dev
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # Optional: run your tests here
+      # Optional: run tests
       # - name: Run tests
       #   run: pytest
 
