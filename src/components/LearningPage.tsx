@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 
 import { HoverBorderGradient } from "@/ui/hover-border-gradient";
 import { AnimatedShinyText } from "@/ui/animated-shiny-text";
@@ -279,7 +279,7 @@ const [currentVideoIndex, setCurrentVideoIndex] = useState<number>(0);
               <h3 className="text-xl font-medium text-white mb-3">Question</h3>
               <p className="text-white/70 mb-4">{question}</p>
               <div className="space-y-3 flex-grow">
-                {answer.map((info, index) => (
+                {answer.map((info: string, index: number) => (
                   <motion.button
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
