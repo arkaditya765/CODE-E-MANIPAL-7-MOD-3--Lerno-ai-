@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+
 import { HoverBorderGradient } from "@/ui/hover-border-gradient";
 import { AnimatedShinyText } from "@/ui/animated-shiny-text";
 import { cn } from "@/lib/utils";
