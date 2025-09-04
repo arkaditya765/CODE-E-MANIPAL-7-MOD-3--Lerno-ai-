@@ -81,11 +81,11 @@ const LearningPage = () => {
     },
   ];
 
-  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
-  const [hasAnswered, setHasAnswered] = useState(false);
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  // Current video index
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
+const [hasAnswered, setHasAnswered] = useState<boolean>(false);
+const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
+const [currentVideoIndex, setCurrentVideoIndex] = useState<number>(0);
+
 
   const currentSlide = FetchData[currentSlideIndex] || FetchData[0];
   const answer = currentSlide.assessment.multiple_choice.choices;
