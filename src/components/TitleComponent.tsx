@@ -1,4 +1,4 @@
-import React from "react";
+
 import { AnimatedShinyText } from "@/ui/animated-shiny-text";
 import { cn } from "@/lib/utils";
 const TitleComponent = ({ title }) => {
