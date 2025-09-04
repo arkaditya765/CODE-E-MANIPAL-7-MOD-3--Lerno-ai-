@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
+import { ReactNode, MouseEventHandler } from "react";
 
-export const AceternityButton = ({ children, onClick }) => {
+interface AceternityButtonProps {
+  children: ReactNode; // anything React can render
+  onClick?: MouseEventHandler<HTMLButtonElement>; // optional click handler
+}
+
+export const AceternityButton: React.FC<AceternityButtonProps> = ({
+  children,
+  onClick,
+}) => {
   return (
     <motion.button
       onClick={onClick}
