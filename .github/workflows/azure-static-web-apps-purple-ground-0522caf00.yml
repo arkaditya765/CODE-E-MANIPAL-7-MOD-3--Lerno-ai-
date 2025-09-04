@@ -34,9 +34,10 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for PR comments
           action: "upload"
-          app_location: "."       # frontend is in repo root
+          app_location: "/"       # frontend is in repo root
           api_location: ""        # no API in Static Web App
           output_location: "dist" # vite build output
+
 
 
 
