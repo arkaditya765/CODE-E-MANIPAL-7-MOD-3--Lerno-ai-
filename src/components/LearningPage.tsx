@@ -121,29 +121,30 @@ const [currentVideoIndex, setCurrentVideoIndex] = useState<number>(0);
   }
 
   const slideVariants = {
-    hidden: (direction) => ({
+   hidden: (direction: number) => ({
       x: direction > 0 ? 300 : -300,
       opacity: 0,
-    }),
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 30,
-      },
-    },
-    exit: (direction) => ({
+     }),
+       visible: {
+       x: 0,
+       opacity: 1,
+       transition: {
+       type: "spring",
+       stiffness: 300,
+       damping: 30,
+     },
+   },
+     exit: (direction: number) => ({
       x: direction > 0 ? -300 : 300,
       opacity: 0,
       transition: {
-        duration: 0.2,
-      },
+      duration: 0.2,
+     },
     }),
   };
 
-  const [direction, setDirection] = useState(1);
+  const [direction, setDirection] = useState<number>(1);
+
 
   function animatedNextSlide() {
     setDirection(1);
