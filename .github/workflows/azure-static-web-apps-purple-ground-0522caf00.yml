@@ -36,7 +36,8 @@ jobs:
           action: "upload"
           app_location: "/"       # frontend is in repo root
           api_location: ""        # no API in Static Web App
-          output_location: "dist" # vite build output
+          output_location: "build" # vite build output
+
 
 
 
