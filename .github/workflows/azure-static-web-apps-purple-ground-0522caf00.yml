@@ -38,3 +38,4 @@ jobs:
           api_location: ""        # no API in Static Web App
           output_location: "dist" # vite build output
 
+
