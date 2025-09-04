@@ -6,5 +6,14 @@
 //   return <PlaceholdersAndVanishInputDemo />;
 //   return <LearningPage />;
 // };
+// App.tsx
+import React from "react";
+import LearningPage from "./components/LearningPage";
+
+const App: React.FC = () => {
+  return <LearningPage />;
+};
 
 export default App;
+
+
